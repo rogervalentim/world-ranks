@@ -28,7 +28,7 @@ export function CountryFilter({
         <label className="text-xs font-medium text-[#6C727F]">Sort by</label>
         <div className="relative w-full lg:w-56">
           <select
-            className="w-full appearance-none rounded-lg border border-[#282B30] bg-transparent px-2 py-2 text-sm text-[#D2D5DA]"
+            className="w-full appearance-none rounded-lg border-2 border-[#282B30] bg-transparent px-2 py-2 text-sm text-[#D2D5DA]"
             value={sortOption}
             onChange={handleSort}
           >
@@ -52,7 +52,7 @@ export function CountryFilter({
         <p className="text-xs font-medium text-[#6C727F]">Region</p>
 
         <div className="flex items-center gap-2 pt-2 lg:block lg:gap-0">
-          <div className="gap-3 lg:flex">
+          <div className="gap-3 pt-3 lg:flex">
             <Button
               continent="Americas"
               onClick={() => handleRegionFilter("Americas")}
@@ -65,7 +65,7 @@ export function CountryFilter({
             />
           </div>
 
-          <div className="gap-3 lg:flex">
+          <div className="gap-3 pt-3 lg:flex">
             <Button
               continent="Africa"
               onClick={() => handleRegionFilter("Africa")}
@@ -82,11 +82,13 @@ export function CountryFilter({
               selected={isRegionSelected("Europe")}
             />
           </div>
-          <Button
-            continent="Oceania"
-            onClick={() => handleRegionFilter("Oceania")}
-            selected={isRegionSelected("Oceania")}
-          />
+          <div className="pt-3">
+            <Button
+              continent="Oceania"
+              onClick={() => handleRegionFilter("Oceania")}
+              selected={isRegionSelected("Oceania")}
+            />
+          </div>
         </div>
       </div>
 
