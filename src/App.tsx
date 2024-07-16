@@ -1,9 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { Hero } from "./components/hero";
+import { Hero, Search, Table, CountryFilter } from "./components/index";
 import { CountryData } from "./types";
-import { Search } from "./components/search";
-import { CountryFilter } from "./components/country-filter";
-import { Table } from "./components/table";
 
 export function App() {
   const [data, setData] = useState<CountryData[]>([]);

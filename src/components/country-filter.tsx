@@ -1,5 +1,5 @@
 import expandDown from "../assets/Expand_down.svg";
-import { Button } from "./button";
+import { Button } from "./index";
 
 interface CountryFilterProps {
   sortOption: string;
