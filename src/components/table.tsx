@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CountryData } from "../types";
 
 interface TableProps {
@@ -82,7 +83,9 @@ export function Table({ sortedData, loading }: TableProps) {
                     />
                   </td>
                   <td className="px-4 py-4 text-sm text-[rgb(210,213,218)]">
-                    {country.name.common}
+                    <Link to={`/country-details/${country.name.common}`}>
+                      {country.name.common}
+                    </Link>
                   </td>
                   <td className="px-4 py-4 text-sm text-[#D2D5DA]">
                     {country.population.toLocaleString()}

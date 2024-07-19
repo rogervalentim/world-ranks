@@ -18,6 +18,7 @@ export function Home() {
       .then((response) => response.json())
       .then((data) => {
         let filteredData = data;
+        console.log(filteredData);
 
         if (regionFilter.length > 0) {
           filteredData = filteredData.filter((country: CountryData) =>
