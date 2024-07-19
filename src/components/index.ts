@@ -1,7 +1,7 @@
-import { Button } from "./button";
-import { Hero } from "./hero";
-import { Search } from "./search";
-import { CountryFilter } from "./country-filter";
-import { Table } from "./table";
+import { Button } from "./Button";
+import { Hero } from "./Hero";
+import { Search } from "./Search";
+import { CountryFilter } from "./CountryFilter";
+import { Table } from "./Table";
 
 export { Button, Hero, Search, CountryFilter, Table };
