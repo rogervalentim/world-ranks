@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { CountryData } from "../types";
-import { CountryFilter, Hero, Search, Table } from "../components";
+import { CountryFilter, Hero, Search, Table } from "../components/index";
 
 export function Home() {
   const [data, setData] = useState<CountryData[]>([]);
